@@ -11,7 +11,3 @@ Admin dapat mengelola data lapangan, reservasi, pembayaran, pengguna, serta lapo
 Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, dan Visual Studio Code.
 
 ---
-| Selesai | Waktu penggunaan lapangan telah selesai |
-| Dibatalkan | Reservasi dibatalkan |
-
----
