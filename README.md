@@ -1,6 +1,6 @@
 🏟️ SewaLapang
 
-Sistem Reservasi Lapangan Futsal & Badminton Berbasis Web
+Sistem Reservasi Lapangan Futsal & Badminton B webasis Web
 
 SewaLapang adalah aplikasi berbasis web yang digunakan untuk membantu proses reservasi lapangan futsal dan badminton secara online.
 
@@ -435,16 +435,10 @@ Progress:
 
 👨‍💻 Pengembang
 
-Nama: Satrio
+Nama: Dani Kurniawan,Muhammad Rafly,Satrio Dewo
 Project: SewaLapang
 Jenis: Sistem Informasi Berbasis Web
 Platform: Web
 Bahasa: PHP
-
----
-
-📄 Lisensi
-
-Project ini dibuat untuk keperluan pembelajaran dan tugas akademik.
 
 ---
