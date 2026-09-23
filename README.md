@@ -1,18 +1,20 @@
-🏟️ SewaLapang
+# 🏟️ SewaLapang
 
-Sistem Reservasi Lapangan Futsal & Badminton B webasis Web
+## Sistem Reservasi Lapangan Futsal & Badminton Berbasis Web
 
 SewaLapang adalah aplikasi berbasis web yang digunakan untuk membantu proses reservasi lapangan futsal dan badminton secara online.
 
-Aplikasi ini dibuat untuk mempermudah pelanggan dalam melihat informasi lapangan, mengecek jadwal, melakukan reservasi, dan mengunggah bukti pembayaran. Admin dapat mengelola data lapangan, reservasi, pembayaran, pengguna, serta laporan.
+Aplikasi ini dibuat untuk mempermudah pelanggan dalam melihat informasi lapangan, mengecek jadwal, melakukan reservasi, dan mengunggah bukti pembayaran.
 
-Project ini dikembangkan sebagai tugas/proyek menggunakan PHP, MySQL, dan XAMPP, dengan Visual Studio Code sebagai code editor.
+Admin dapat mengelola data lapangan, reservasi, pembayaran, pengguna, serta laporan.
+
+Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, dan Visual Studio Code.
 
 ---
 
-📌 Fitur
+## 📌 Fitur Sistem
 
-👤 Pelanggan
+### 👤 Pelanggan
 
 - Registrasi akun
 - Login dan logout
@@ -26,7 +28,7 @@ Project ini dikembangkan sebagai tugas/proyek menggunakan PHP, MySQL, dan XAMPP,
 - Melihat status pembayaran
 - Melihat riwayat reservasi
 
-👨‍💼 Admin
+### 👨‍💼 Admin
 
 - Login sebagai admin
 - Dashboard admin
@@ -43,24 +45,23 @@ Project ini dikembangkan sebagai tugas/proyek menggunakan PHP, MySQL, dan XAMPP,
 
 ---
 
-🛠️ Teknologi
+## 🛠️ Teknologi
 
-Project ini menggunakan:
-
-Teknologi| Kegunaan
-PHP| Backend
-MySQL| Database
-HTML| Struktur halaman
-CSS| Tampilan website
-JavaScript| Interaksi halaman
-XAMPP| Web server dan database
-Apache| Web server
-phpMyAdmin| Pengelolaan database
-Visual Studio Code| Code editor
+| Teknologi | Kegunaan |
+|---|---|
+| PHP | Backend |
+| MySQL | Database |
+| HTML | Struktur halaman |
+| CSS | Tampilan website |
+| JavaScript | Interaksi halaman |
+| XAMPP | Web server dan database |
+| Apache | Web server |
+| phpMyAdmin | Pengelolaan database |
+| Visual Studio Code | Code editor |
 
 ---
 
-💻 Persyaratan Sistem
+## 💻 Persyaratan Sistem
 
 Sebelum menjalankan project, pastikan sudah terinstall:
 
@@ -69,12 +70,13 @@ Sebelum menjalankan project, pastikan sudah terinstall:
 - PHP
 - MySQL
 - Visual Studio Code
-- Web Browser seperti Google Chrome, Microsoft Edge, atau Mozilla Firefox
+- Google Chrome / Microsoft Edge / Mozilla Firefox
 
 ---
 
-📂 Struktur Folder
+## 📂 Struktur Folder
 
+```text
 sewalapang/
 │
 ├── admin/
@@ -107,10 +109,8 @@ sewalapang/
 ├── assets/
 │   ├── css/
 │   │   └── style.css
-│   │
 │   ├── js/
 │   │   └── script.js
-│   │
 │   └── img/
 │
 ├── uploads/
@@ -118,116 +118,128 @@ sewalapang/
 │
 ├── index.php
 └── README.md
+```
 
 ---
 
-🗄️ Database
+## 🗄️ Database
 
 Nama database:
 
+```text
 sewalapang
+```
 
-Database menggunakan MySQL.
+Database dibuat menggunakan **MySQL** melalui **phpMyAdmin** pada XAMPP.
 
-Tabel
+### Tabel Database
 
-Database terdiri dari beberapa tabel utama:
+Project SewaLapang menggunakan 4 tabel utama:
 
+```text
 users
 lapangan
 reservasi
 pembayaran
+```
 
-Relasi
+### Fungsi Tabel
 
+| Tabel | Fungsi |
+|---|---|
+| `users` | Menyimpan data admin dan pelanggan |
+| `lapangan` | Menyimpan data lapangan futsal dan badminton |
+| `reservasi` | Menyimpan data pemesanan lapangan |
+| `pembayaran` | Menyimpan data pembayaran dan bukti pembayaran |
+
+### Relasi Database
+
+```text
 users
   │
-  │ 1
-  │
-  │ N
-reservasi
-  │
-  │ N
-  │
-  │ 1
-lapangan
-
-reservasi
-  │
-  │ 1
-  │
-  │ 1
-pembayaran
+  └── reservasi
+          │
+          ├── lapangan
+          │
+          └── pembayaran
+```
 
 ---
 
-⚙️ Cara Instalasi
+## ⚙️ Cara Instalasi
 
-1. Clone Repository
+### 1. Clone Repository
 
-Clone repository menggunakan Git:
+Gunakan Git untuk melakukan clone repository:
 
+```bash
 git clone https://github.com/USERNAME/sewalapang.git
+```
 
-Ganti "USERNAME" dengan username GitHub kamu.
+Ganti `USERNAME` dengan username GitHub pemilik repository.
 
 Contoh:
 
+```bash
 git clone https://github.com/satrio/sewalapang.git
+```
 
 ---
 
-2. Masukkan Project ke XAMPP
+### 2. Masukkan Project ke XAMPP
 
-Setelah repository selesai di-clone, pindahkan folder project ke:
+Pastikan folder project berada di:
 
-C:\xampp\htdocs\
-
-Sehingga:
-
+```text
 C:\xampp\htdocs\sewalapang
+```
 
 ---
 
-3. Jalankan XAMPP
+### 3. Jalankan XAMPP
 
-Buka XAMPP Control Panel.
+Buka **XAMPP Control Panel**.
 
 Aktifkan:
 
-Apache  → Start
-MySQL   → Start
+```text
+Apache
+MySQL
+```
 
-Pastikan keduanya berwarna hijau/running.
+Pastikan keduanya sudah berstatus **Running**.
 
 ---
 
-🗄️ 4. Membuat Database
+### 4. Membuat Database
 
 Buka:
 
+```text
 http://localhost/phpmyadmin
+```
 
-Kemudian buat database:
+Buat database dengan nama:
 
+```text
 sewalapang
+```
 
-Setelah itu import file SQL project jika tersedia:
-
-database/sewalapang.sql
-
-Jika file SQL belum tersedia, database dapat dibuat menggunakan struktur tabel pada dokumentasi project.
+Kemudian buat tabel sesuai struktur database project.
 
 ---
 
-🔌 5. Konfigurasi Database
+### 5. Konfigurasi Database
 
-Buka:
+Buka file:
 
+```text
 config/database.php
+```
 
-Sesuaikan konfigurasi:
+Gunakan konfigurasi berikut:
 
+```php
 <?php
 
 $host = "localhost";
@@ -247,94 +259,114 @@ if (!$conn) {
 }
 
 ?>
+```
 
-Konfigurasi default XAMPP biasanya:
+Konfigurasi default XAMPP:
 
-Host     : localhost
-Username : root
-Password : kosong
-Database : sewalapang
+| Pengaturan | Nilai |
+|---|---|
+| Host | `localhost` |
+| Username | `root` |
+| Password | Kosong |
+| Database | `sewalapang` |
 
 ---
 
-🌐 6. Menjalankan Website
+### 6. Menjalankan Website
 
-Buka browser dan akses:
+Buka browser:
 
+```text
 http://localhost/sewalapang/
+```
 
 Halaman login:
 
+```text
 http://localhost/sewalapang/auth/login.php
+```
 
 Halaman registrasi:
 
+```text
 http://localhost/sewalapang/auth/register.php
+```
 
 ---
 
-🔐 Sistem Role
+## 🔐 Sistem Role
 
-SewaLapang menggunakan dua role:
+SewaLapang memiliki dua jenis pengguna:
 
+```text
 admin
 pelanggan
+```
 
-Admin
+### Admin
 
-Setelah login:
+Admin diarahkan ke:
 
+```text
 admin/dashboard.php
+```
 
-Pelanggan
+Admin dapat mengelola data lapangan, reservasi, pembayaran, pengguna, dan laporan.
 
-Setelah login:
+### Pelanggan
 
+Pelanggan diarahkan ke:
+
+```text
 pelanggan/dashboard.php
+```
 
-Sistem menggunakan PHP Session untuk mempertahankan status login.
+Pelanggan dapat melihat lapangan, mengecek jadwal, melakukan reservasi, melakukan pembayaran, dan melihat riwayat reservasi.
+
+Sistem menggunakan **PHP Session** untuk mengatur status login dan hak akses berdasarkan role.
 
 ---
 
-🔑 Akun Testing
+## 🔑 Akun Testing
 
-Untuk testing awal dapat digunakan akun yang telah dibuat di database.
+### Admin
 
-Admin
-
+```text
 Email    : admin@sewalapang.com
 Password : password
 Role     : admin
+```
 
-Pelanggan
+### Pelanggan
 
+```text
 Email    : pelanggan@sewalapang.com
 Password : password
 Role     : pelanggan
+```
 
-«Untuk penggunaan sebenarnya, password akun testing sebaiknya diganti.»
+> Akun di atas hanya digunakan untuk kebutuhan testing selama pengembangan.
 
 ---
 
-🔒 Keamanan
+## 🔒 Keamanan
 
-Beberapa mekanisme keamanan yang digunakan:
+Sistem menggunakan beberapa mekanisme keamanan:
 
-- Password disimpan menggunakan "password_hash()".
-- Password diverifikasi menggunakan "password_verify()".
-- Sistem menggunakan session untuk login.
+- Password disimpan menggunakan `password_hash()`.
+- Password diverifikasi menggunakan `password_verify()`.
+- Sistem menggunakan PHP Session.
 - Hak akses dibedakan berdasarkan role.
-- Pengguna pelanggan tidak dapat membuka halaman admin.
+- Pelanggan tidak dapat mengakses halaman admin.
 - Email pengguna harus unik.
 - Input form dilakukan validasi.
-- Query tertentu menggunakan prepared statement.
+- Query registrasi menggunakan prepared statement.
 
 ---
 
-📅 Alur Reservasi
+## 📅 Alur Reservasi
 
-Alur utama sistem:
-
+```text
 Pelanggan
     ↓
 Login / Registrasi
@@ -343,9 +375,7 @@ Melihat Lapangan
     ↓
 Memilih Lapangan
     ↓
-Memilih Tanggal
-    ↓
-Memilih Jam
+Memilih Tanggal dan Jam
     ↓
 Cek Ketersediaan
     ↓
@@ -360,57 +390,55 @@ Upload Bukti Pembayaran
 Validasi Admin
     ↓
 Reservasi Dikonfirmasi
+```
 
 ---
 
-💰 Status Pembayaran
+## 💰 Status Pembayaran
 
-Sistem menggunakan beberapa status pembayaran:
-
-Belum Bayar
-Menunggu Validasi
-Lunas
-Ditolak
-
----
-
-📋 Status Reservasi
-
-Status reservasi:
-
-Menunggu Pembayaran
-Menunggu Validasi
-Dikonfirmasi
-Ditolak
-Selesai
-Dibatalkan
+| Status | Keterangan |
+|---|---|
+| Belum Bayar | Pelanggan belum melakukan pembayaran |
+| Menunggu Validasi | Bukti pembayaran sudah dikirim |
+| Lunas | Pembayaran telah diterima admin |
+| Ditolak | Bukti pembayaran ditolak |
 
 ---
 
-🧪 Pengujian
+## 📋 Status Reservasi
 
-Pengujian sistem menggunakan metode Black Box Testing.
-
-Contoh pengujian:
-
-Fitur| Pengujian| Hasil
-Login| Email dan password benar| Berhasil
-Login| Password salah| Menampilkan error
-Registrasi| Data lengkap| Berhasil
-Registrasi| Email sudah digunakan| Ditolak
-Reservasi| Jadwal tersedia| Berhasil
-Reservasi| Jadwal bentrok| Ditolak
-Pembayaran| Upload bukti| Berhasil
-Validasi| Admin menerima pembayaran| Status Lunas
-Logout| Klik logout| Session dihapus
+| Status | Keterangan |
+|---|---|
+| Menunggu Pembayaran | Reservasi dibuat tetapi belum dibayar |
+| Menunggu Validasi | Bukti pembayaran menunggu pemeriksaan |
+| Dikonfirmasi | Reservasi telah disetujui |
+| Ditolak | Reservasi atau pembayaran ditolak |
+| Selesai | Waktu penggunaan lapangan telah selesai |
+| Dibatalkan | Reservasi dibatalkan |
 
 ---
 
-🚧 Status Project
+## 🧪 Pengujian
 
-Project saat ini masih dalam tahap pengembangan.
+Pengujian sistem menggunakan metode **Black Box Testing**.
 
-Progress:
+| No | Fitur | Skenario | Hasil yang Diharapkan |
+|---:|---|---|---|
+| 1 | Login | Email dan password benar | Masuk ke dashboard |
+| 2 | Login | Password salah | Menampilkan pesan error |
+| 3 | Registrasi | Data lengkap | Akun berhasil dibuat |
+| 4 | Registrasi | Email sudah digunakan | Registrasi ditolak |
+| 5 | Reservasi | Jadwal tersedia | Reservasi berhasil |
+| 6 | Reservasi | Jadwal bentrok | Reservasi ditolak |
+| 7 | Pembayaran | Upload bukti | Bukti tersimpan |
+| 8 | Validasi | Admin menerima pembayaran | Status menjadi Lunas |
+| 9 | Logout | Klik logout | Session dihapus |
+
+---
+
+## 🚧 Status Project
+
+Project masih dalam tahap pengembangan.
 
 - [x] Perancangan SRS
 - [x] Struktur folder
@@ -433,12 +461,14 @@ Progress:
 
 ---
 
-👨‍💻 Pengembang
+## 👨‍💻 Pengembang
 
-Nama: Dani Kurniawan,Muhammad Rafly,Satrio Dewo
-Project: SewaLapang
-Jenis: Sistem Informasi Berbasis Web
-Platform: Web
-Bahasa: PHP
+**Nama:** Dani Kurniawan, Muhammad Raflly , Satrio Dewo
+
+**Project:** SewaLapang
+
+**Jenis:** Sistem Informasi Berbasis Web
+
+**Teknologi:** PHP, MySQL, HTML, CSS, JavaScript, XAMPP
 
 ---
