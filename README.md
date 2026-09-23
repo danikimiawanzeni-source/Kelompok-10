@@ -1,4 +1,4 @@
-# 🏟️ SewaLapang
+#  SewaLapang
 
 ## Sistem Reservasi Lapangan Futsal & Badminton Berbasis Web
 
@@ -12,9 +12,9 @@ Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, d
 
 ---
 
-## 📌 Fitur Sistem
+##  Fitur Sistem
 
-### 👤 Pelanggan
+###  Pelanggan
 
 - Registrasi akun
 - Login dan logout
@@ -28,7 +28,7 @@ Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, d
 - Melihat status pembayaran
 - Melihat riwayat reservasi
 
-### 👨‍💼 Admin
+###  Admin
 
 - Login sebagai admin
 - Dashboard admin
@@ -45,7 +45,7 @@ Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, d
 
 ---
 
-## 🛠️ Teknologi
+##  Teknologi
 
 | Teknologi | Kegunaan |
 |---|---|
@@ -61,7 +61,7 @@ Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, d
 
 ---
 
-## 💻 Persyaratan Sistem
+##  Persyaratan Sistem
 
 Sebelum menjalankan project, pastikan sudah terinstall:
 
@@ -74,7 +74,7 @@ Sebelum menjalankan project, pastikan sudah terinstall:
 
 ---
 
-## 📂 Struktur Folder
+##  Struktur Folder
 
 ```text
 sewalapang/
@@ -122,7 +122,7 @@ sewalapang/
 
 ---
 
-## 🗄️ Database
+##  Database
 
 Nama database:
 
@@ -166,7 +166,7 @@ users
 
 ---
 
-## ⚙️ Cara Instalasi
+##  Cara Instalasi
 
 ### 1. Clone Repository
 
@@ -294,7 +294,7 @@ http://localhost/sewalapang/auth/register.php
 
 ---
 
-## 🔐 Sistem Role
+##  Sistem Role
 
 SewaLapang memiliki dua jenis pengguna:
 
@@ -327,7 +327,7 @@ Sistem menggunakan **PHP Session** untuk mengatur status login dan hak akses ber
 
 ---
 
-## 🔑 Akun Testing
+##  Akun Testing
 
 ### Admin
 
@@ -349,7 +349,7 @@ Role     : pelanggan
 
 ---
 
-## 🔒 Keamanan
+##  Keamanan
 
 Sistem menggunakan beberapa mekanisme keamanan:
 
@@ -364,7 +364,7 @@ Sistem menggunakan beberapa mekanisme keamanan:
 
 ---
 
-## 📅 Alur Reservasi
+##  Alur Reservasi
 
 ```text
 Pelanggan
@@ -394,7 +394,7 @@ Reservasi Dikonfirmasi
 
 ---
 
-## 💰 Status Pembayaran
+##  Status Pembayaran
 
 | Status | Keterangan |
 |---|---|
@@ -405,7 +405,7 @@ Reservasi Dikonfirmasi
 
 ---
 
-## 📋 Status Reservasi
+##  Status Reservasi
 
 | Status | Keterangan |
 |---|---|
@@ -418,7 +418,7 @@ Reservasi Dikonfirmasi
 
 ---
 
-## 🧪 Pengujian
+##  Pengujian
 
 Pengujian sistem menggunakan metode **Black Box Testing**.
 
@@ -436,7 +436,7 @@ Pengujian sistem menggunakan metode **Black Box Testing**.
 
 ---
 
-## 🚧 Status Project
+##  Status Project
 
 Project masih dalam tahap pengembangan.
 
@@ -461,7 +461,7 @@ Project masih dalam tahap pengembangan.
 
 ---
 
-## 👨‍💻 Pengembang
+##  Pengembang
 
 **Nama:** Dani Kurniawan, Muhammad Raflly , Satrio Dewo
 
