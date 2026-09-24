@@ -8,6 +8,4 @@ Aplikasi ini dibuat untuk mempermudah pelanggan dalam melihat informasi lapangan
 
 Admin dapat mengelola data lapangan, reservasi, pembayaran, pengguna, serta laporan.
 
-Project ini dikembangkan menggunakan PHP, MySQL, XAMPP, HTML, CSS, JavaScript, dan Visual Studio Code.
-
 ---
